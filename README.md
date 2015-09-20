@@ -10,8 +10,10 @@ All examples have been testing with SDK 1.3.0, 4MB Module-12.
 Module-01 512KB is considered out of date.
 
 ## Begin
-1. Lunch a ready Espressif docker container : docker run -i -t -e HOME=/opt/Espressif -v /media/sguilly/storage:/storage cesanta/esp8266-build-oss:latest /bin/bash
+1. Lunch a ready Espressif docker container : docker run -i -t -e HOME=/opt/Espressif -v /media/sguilly/storage:/storage --device=/dev/ttyUSB0 cesanta/esp8266-build-oss:latest /bin/bash
+
 Or Install compiler for ESP with [esp-open-sdk](https://github.com/pfalcon/esp-open-sdk). It would be good if you install at HOME.
+
 2. Clone this project
 ```
 git clone --recursive https://github.com/sguilly/esp8266-dev.git
